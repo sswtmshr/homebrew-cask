@@ -38,11 +38,8 @@ cask "box-tools" do
   zap trash: "~/Library/Application Support/Box/Box Edit",
       rmdir: "~/Library/Application Support/Box"
 
-  caveats do
-    requires_rosetta
-    <<~EOS
-      Box Edit currently only works with Safari and Firefox.
-      Restart your browser to load the plugin.
-    EOS
-  end
+  caveats <<~EOS
+    Box Edit currently only works with Safari and Firefox.
+    Restart your browser to load the plugin.
+  EOS
 end
